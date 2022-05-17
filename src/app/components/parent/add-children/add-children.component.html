@@ -1,0 +1,36 @@
+<div class="my-form">
+<form (submit)="addChildren(un.value,fn.value,pass.value)">
+
+<!-- ,passParent1.value,passParent2.value,nameInstitution.value,idInstitution.value -->
+
+
+    <!-- todo: add inputs to children detalis -->
+       <br>
+        <label for="un">שם ילד:</label>
+        <input class="form-control" type="text" id="un" #un placeholder="Child name" formControlName="Child name">
+        <br>
+        <label for="un">שם משפחה:</label>
+        <input class="form-control" type="text" id="fn" #fn placeholder="Last Name" formControlName="Last Name">
+        <br>
+        <label for="pass">תעודת זהות ילד:</label>
+        <input class="form-control" type="password" id="pass" #pass placeholder="Password" formControlName="password">
+        <br>
+        <label for="idParent">1 קוד הורה</label>
+        <input class="form-control" type="password" id="passParent1" #pass placeholder="idParent1" formControlName="idParent1">
+        <br>
+        <label for="idParent">2 קוד הורה</label>
+        <input class="form-control" type="password" id="passParent2" #pass placeholder="idParent2" formControlName="idParent2">
+        <br>
+        <label for="un">שם מוסד:</label>
+        <input class="form-control" type="text" id="nameInstitution" #un placeholder="Institution name" formControlName="Institution name">
+        <br>
+        <label for="id">קוד מוסד:</label>
+        <input class="form-control" type="text" id="idInstitution" #un placeholder="Institution id" formControlName="Institution id">
+        <br>
+        <!-- <p *ngIf="signInerror==true">user name ot password is wrong</p>
+        <input type="submit" class="btn btn-primary" value="Sign in"
+         [disabled]="form.valid==false"> -->
+       <div> <input type="submit" value="שמירת תלמיד"></div>
+</form>
+</div>
+

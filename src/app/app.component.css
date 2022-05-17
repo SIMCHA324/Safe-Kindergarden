@@ -1,0 +1,41 @@
+/* .btnParent{
+    display: inline-block;
+    background: #0fd247;
+    color: #fff;
+    border: 2px solid;
+    padding: 10px 20px;
+  
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    border-color: #090909;
+} */
+.topnav {
+    overflow: hidden;
+   background: rgb(15, 150, 53);
+   text-align: center;
+   
+   }
+   
+   .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+   }
+   
+   .topnav a:hover {
+     
+    color:  rgb(15, 150, 53);
+     background: white;
+   }
+   
+   .topnav a.active {
+       background:  rgb(15, 150, 53);
+    color: white;
+   }

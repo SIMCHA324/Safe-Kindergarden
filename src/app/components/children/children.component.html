@@ -1,0 +1,45 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="t">
+    <button class="btn btn-primary"  >הוסף תלמיד חדש</button>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <table class="table table-hover table-success">
+        <thead>
+            <tr>
+                <th></th>
+                <th>שם פרטי</th>
+                 <th>שם משפחה</th>
+                <th>שם מוסד</th>
+                <th>סמל מוסד</th>
+                <th>האם התלמיד נמצא?</th>
+                <th>עדכון</th>
+                <th>מחיקה</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <th>👩‍⚕️</th>
+                <th>יהונתן</th>
+                <th>כהן</th>
+                <th>גן תמר</th>
+                <th>12345</th>
+                <th>??</th>
+                <th ><button  >עדכן</button></th>
+                <th> <button >מחק</button></th> -->
+         </tr>
+                <tr *ngFor="let c of allChildren">
+                    <!-- <ng-template [ngIf]="c.idChild==true"> -->
+                        <td>{{c.idChild}}</td>
+                        <td>{{c.firstName}}</td>
+                        <td>{{c.lastName}}</td>
+                        <td>{{c.class}}</td>
+                        <td>{{c.idInstitution}}</td>
+                        <!-- <td>{{c.volunteerGmail}}</td> -->
+                    <!-- </ng-template> -->
+                </tr>
+           
+            
+        </tbody>
+    </table>
+</div>
+

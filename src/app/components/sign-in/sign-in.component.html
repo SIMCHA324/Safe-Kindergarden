@@ -1,0 +1,74 @@
+<!-- <form (submit)="checkUser(mail.value,pass.value)" class="form form-control">
+    <label for="un">:כתובת מייל</label>
+    <input class="form form-control" type="text" id="mail" #mail placeholder="Email" formControlName="mail">
+    <label for="pass">סיסמא:</label>
+    <input class="from form-control" type="password" id="pass" #pass placeholder="password" formControlName="password">
+    <p *ngIf="signInError==true"> mail or passord are uncorrect </p>
+    <input type="submit" class="btn btn-primary" value="sign-in" [disabled]="signInForm.valid==false">
+</form> -->
+
+<header>
+
+    <!-- <div  class="topnav">
+  <a routerLink="sign-in" >כניסה</a>
+   class="aa" href="#home" -->
+  <!-- <a routerLink="delete-child">מחק ילד</a>
+    class="aa" href="#deleteParent" 
+   <a routerLink="updateChild" class="aa" href="#sign-in">עדכן פרטי ילד</a>
+  <a routerLink="add-children" class="aa" href="#addParent">הוספת ילד</a>
+ </div>  --> 
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+       
+        </div>
+    </nav>
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-md-8">
+              <form class="bg-white  rounded-5 shadow-5-strong p-5"  style= "border-radius: 10px"   >
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" #mail id="form1Example1" class="form-control" />
+                  <label class="form-label" for="form1Example1">Email address</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" #pass id="form1Example2" class="form-control" />
+                  <label class="form-label" for="form1Example2">Password</label>
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">                     
+                    </div>
+                  </div>                 
+                </div>
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block"(submit)="checkUser(mail.value,pass.value)">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color:  rgb(15, 150, 53)">
+      © 2020 Copyright:
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+
+  

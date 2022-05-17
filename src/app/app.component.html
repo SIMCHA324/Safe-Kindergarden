@@ -1,0 +1,20 @@
+<!-- <app-add-children></app-add-children> -->
+ <!-- <div  class="topnav">
+  <a routerLink="sign-in" >כניסה</a>   
+  <a routerLink="delete-child">מחק ילד</a> -->
+  <!-- <a routerLink="camera">מצלמה</a>
+  <a routerLink="update-child" >עדכן פרטי ילד</a>
+  <a routerLink="add-children" >הוספת ילד</a>
+  <a routerLink="children">child</a>
+ </div>    -->
+<!-- <app-child-view></app-child-view> -->
+<!-- <app-add-children></app-add-children> -->
+<!-- <app-add-parent></app-add-parent> -->
+<!-- <app-sign-in></app-sign-in> -->
+<!-- <app-update-child></app-update-child> -->
+<!-- חובה בשביל המצלמה! -->
+<app-camera (getPicture)="handleImage($event)"></app-camera>
+ <div class="webcam-image" *ngIf="webcamImage">
+  <img [src]="webcamImage.imageAsDataUrl" />
+</div>  
+<router-outlet></router-outlet>

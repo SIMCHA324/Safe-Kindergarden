@@ -1,0 +1,20 @@
+.button{
+    color: white;
+    background-color: black;
+    padding: 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 15%;
+    margin-left: 40%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.hello{
+text-align: center;
+font-size: 40px;
+margin-top: 4%;
+color:rgb(16, 174, 16) ;
+}
